@@ -1,0 +1,121 @@
+<div class="button-container">
+    <div class="button-1">
+        <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+    </div>
+    <div class="button-2">
+        <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Next</button>
+    </div>
+</div>
+
+<div class="Container">
+    <div class="header">
+        <h4>E-LearnPoint</h4>
+    </div>
+    <div class="text">
+        <p>Welcome to our platform</p>
+    </div>
+    <div class="about">
+        <h2>About E-LearnPoint</h2>
+        <p>E-LearnPoint is an online learning platform designed to help individuals master the latest IT technologies and programming languages. Whether you're a beginner or a professional, we provide comprehensive and hands-on learning paths to build your skills and advance your career.</p>
+
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide accessible, affordable, and high-quality education in the tech industry. We believe in making learning easy, flexible, and practical for everyone who is passionate about technology and wants to enhance their skills.</p>
+
+        <h3>What We Offer</h3>
+        <ul>
+            <li>Comprehensive courses in Web Development, Mobile App Development, Data Science, and more.</li>
+            <li>Interactive lessons with real-world projects to help you gain hands-on experience.</li>
+            <li>Certifications to showcase your knowledge and skills to potential employers.</li>
+            <li>Expert instructors who are passionate about teaching and mentoring students.</li>
+        </ul>
+
+        <h3>Join Us Today</h3>
+        <p>Start learning and advancing your career today with E-LearnPoint. Our platform is designed to guide you through every step of your learning journey, from basic concepts to advanced techniques. Let's build the future together!</p>
+    </div>
+</div>
+
+<style>
+  /* Button Container Styling */
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Equal space between buttons */
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .button-1 button, .button-2 button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100px;
+    height: 40px;
+  }
+
+  .button-1 button:hover, .button-2 button:hover {
+    background-color: #1d6fa5;
+    transform: translateY(-2px);
+  }
+
+  .button-1 button:active, .button-2 button:active {
+    background-color: #145582;
+    transform: translateY(0);
+  }
+
+  /* Container Styling */
+  .Container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .header h4 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+
+  .text p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .about {
+    margin-top: 30px;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+  }
+
+  .about h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-top: 20px;
+  }
+
+  .about p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .about ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+  }
+
+  .about ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+</style>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: 20px; /* Added space between buttons */
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #1d6fa5;
+      transform: translateY(-2px);
+    }
+
+    button:active {
+      background-color: #145582;
+      transform: translateY(0);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .details h3 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .contact-info b {
+      font-size: 1.1rem;
+      color: #2c3e50;
+    }
+
+    .contact-info p {
+      margin: 5px 0 15px;
+      color: #555;
+    }
+
+    .contact-info a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .social-media {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-link {
+      font-size: 1rem;
+      color: #fff;
+      background-color: #3498db;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .social-link:hover {
+      background-color: #1d6fa5;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button style="width: 100px; height: 50px;" class="btn btn-primary" (click)="onBack()">Back</button>
+    <button style="width: 100px; height: 50px;" class="btn btn-primary" (click)="onNext()">Next</button>
+  </div>
+
+  <div class="container">
+    <div class="details">
+      <h3>Contact Us</h3>
+    </div>
+    <div class="contact-info">
+      <b>Address:</b>
+      <p>TDI City Mohali, Punjab</p>
+
+      <b>Pincode:</b>
+      <p>160055</p>
+
+      <b>City:</b>
+      <p>Sahibzada Ajit Singh Nagar</p>
+
+      <b>State:</b>
+      <p>Punjab</p>
+
+      <b>Phone:</b>
+      <p>+91 98765 43210</p>
+
+      <b>Email:</b>
+      <p><a href="mailto:info@elearnpoint.com">info.elearnpoint.com</a></p>
+
+      <b>Working Hours:</b>
+      <p>Monday - Saturday: 9:00 AM to 6:00 PM</p>
+
+      <b>Follow Us:</b>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a>
+        <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+        <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

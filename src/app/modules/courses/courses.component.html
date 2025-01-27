@@ -1,0 +1,105 @@
+<div class="button-container">
+    <div class="button-1">
+        <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+    </div>
+    <div class="button-2">
+        <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Next</button>
+    </div>
+</div>
+
+<div class="container">
+    <h3 class="title">All types of IT Courses Available</h3>
+    <div class="courses">
+        <div class="course">
+            <h4>Front-end Development</h4>
+            <p>Learn how to build visually stunning and responsive websites using technologies like HTML, CSS, JavaScript, and frameworks like React or Angular.</p>
+        </div>
+        <div class="course">
+            <h4>Back-end Development</h4>
+            <p>Master the server-side of web applications using Node.js, Python, Java, and databases like MongoDB or MySQL to build robust APIs.</p>
+        </div>
+        <div class="course">
+            <h4>Full Stack Development</h4>
+            <p>Become a versatile developer by mastering both front-end and back-end technologies, creating complete and scalable web solutions.</p>
+        </div>
+        <div class="course">
+            <h4>MERN Stack Development</h4>
+            <p>Specialize in the MERN stack (MongoDB, Express.js, React, and Node.js) to develop powerful web applications.</p>
+        </div>
+        <div class="course">
+            <h4>DevOps</h4>
+            <p>Learn the principles of DevOps to streamline development and deployment processes using tools like Docker, Kubernetes, and Jenkins.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .button-1 button, .button-2 button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Buttons take equal width */
+  }
+
+  .button-1 button:hover, .button-2 button:hover {
+    background-color: #1d6fa5;
+    transform: translateY(-2px);
+  }
+
+  .button-1 button:active, .button-2 button:active {
+    background-color: #145582;
+    transform: translateY(0);
+  }
+
+  /* Container Styling */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .course {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .course h4 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+
+  .course p {
+    color: #555;
+    line-height: 1.6;
+  }
+</style>

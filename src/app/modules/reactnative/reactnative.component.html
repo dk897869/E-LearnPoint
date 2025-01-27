@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Native Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h3 {
+      color: #2c3e50;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    b {
+      font-weight: bold;
+      color: #2c3e50;
+      font-size: 1.2em;
+    }
+
+    i {
+      font-style: italic;
+      color: #444;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      text-indent: -25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      color: #3498db;
+      font-weight: bold;
+      font-size: 1.2em;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .feature-section, .tools-section, .topics-section {
+      background-color: #ffffff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-section h3,
+    .topics-section h3,
+    .tools-section h3 {
+      margin-top: 0;
+    }
+
+    .tools-section ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Flexbox for Button Layout */
+    .button-container {
+      display: flex;
+      justify-content: space-between; /* Equal space between the buttons */
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    .button-container button {
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button-container button:hover {
+      background-color: #1d6fa5;
+      transform: translateY(-2px);
+    }
+
+    .button-container button:active {
+      background-color: #145582;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button Container with Flexbox -->
+  <div class="button-container">
+    <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+    <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Next</button>
+  </div>
+
+  <h3>What is React Native?</h3>
+  <p><i>React Native is an open-source framework created by Facebook for building mobile applications using JavaScript and React. It enables developers to create natively rendered mobile apps for iOS and Android using a single codebase, reducing development time and effort.</i></p>
+
+  <div class="feature-section">
+    <h3>Features of React Native:</h3>
+    <ul>
+      <li><b>Cross-Platform Development:</b> Write once, run on both iOS and Android platforms, significantly reducing time and costs.</li>
+      <li><b>Native Performance:</b> Delivers a near-native user experience using native components and integrates seamlessly with native code (Swift, Objective-C, Java).</li>
+      <li><b>Hot Reloading:</b> Allows developers to see changes instantly without restarting the application, enhancing productivity.</li>
+      <li><b>Reusable Components:</b> Components can be reused across platforms, ensuring consistency and efficiency in app development.</li>
+      <li><b>Large Community and Ecosystem:</b> Extensive libraries, tools, and community support make it easier to find solutions and resources.</li>
+      <li><b>Modular Architecture:</b> Facilitates collaborative development and simplifies code updates.</li>
+      <li><b>Third-Party Plugin Support:</b> Offers flexibility to use native modules or libraries for specific functionalities.</li>
+      <li><b>Open Source:</b> Free to use and constantly evolving, thanks to contributions from a global community of developers.</li>
+    </ul>
+  </div>
+
+  <div class="topics-section">
+    <h3>Important Topics:</h3>
+    <ul>
+      <li><b>Core Concepts:</b> Functional and Class components, Props and State, and Styling using Flexbox and stylesheets.</li>
+      <li><b>Navigation:</b> Stack, Tab, and Drawer navigators using React Navigation.</li>
+      <li><b>State Management:</b> Context API, Redux, or MobX for handling complex application states.</li>
+      <li><b>APIs and Data Fetching:</b> Fetch API and Axios for HTTP requests, and integration with RESTful and GraphQL APIs.</li>
+      <li><b>Asynchronous Programming:</b> Promises and async/await for handling network requests and asynchronous tasks.</li>
+      <li><b>Platform-Specific Code:</b> Writing code using the `Platform` module for platform-specific behavior.</li>
+      <li><b>Native Modules and Bridging:</b> Integrating native code for extended functionality.</li>
+      <li><b>React Native UI Libraries:</b> Tools like NativeBase, React Native Elements, and Material-UI for building UI components.</li>
+      <li><b>Testing:</b> Unit testing with Jest and end-to-end testing with Detox.</li>
+      <li><b>Performance Optimization:</b> Techniques to improve performance, such as optimizing FlatLists and reducing unnecessary re-renders.</li>
+    </ul>
+  </div>
+
+  <div class="tools-section">
+    <h3>React Native Development Tools:</h3>
+    <ul>
+      <li><b>Expo:</b> A framework and platform for building React Native apps, simplifying development with tools like `expo-cli`.</li>
+      <li><b>React Native CLI:</b> The official command-line interface for creating and managing React Native projects.</li>
+      <li><b>Visual Studio Code:</b> A powerful code editor with extensions like React Native Tools for debugging and productivity.</li>
+      <li><b>Redux DevTools:</b> Debugging tools for state management when using Redux.</li>
+      <li><b>Flipper:</b> A debugging tool for React Native apps, supporting logs, network requests, and performance monitoring.</li>
+      <li><b>Android Studio & Xcode:</b> Essential tools for building and testing apps on Android and iOS simulators/emulators.</li>
+      <li><b>React Native Debugger:</b> An integrated tool for debugging React Native apps with Redux support.</li>
+      <li><b>Third-Party Libraries:</b> 
+        <ul>
+          <li><b>React Navigation:</b> For handling navigation between screens.</li>
+          <li><b>Axios:</b> For making API calls and handling data.</li>
+          <li><b>Lottie:</b> For integrating animations in apps.</li>
+          <li><b>React Native Vector Icons:</b> For adding icons to apps.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

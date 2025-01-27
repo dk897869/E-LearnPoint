@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    b {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-top: 15px;
+      display: block;
+    }
+
+    i {
+      font-style: italic;
+      color: #555;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      color: #3498db;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Styling for buttons */
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px 0; /* Adjust margin as needed */
+    }
+
+    .back-button, .next-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      width: 48%; /* Adjust width to fit within the container */
+    }
+
+    .back-button {
+      background-color: #e74c3c;
+    }
+
+    .next-button {
+      background-color: #2ecc71;
+    }
+
+    .back-button:hover {
+      background-color: #c0392b;
+    }
+
+    .next-button:hover {
+      background-color: #27ae60;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="button-container">
+    <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+    <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Next</button>
+</div>
+
+<h1>Node.js Overview</h1>
+
+<div class="container">
+  <b>What is Node.js?</b>
+  <i>Node.js is an open-source, cross-platform JavaScript runtime environment built on Chrome's V8 JavaScript engine. It allows developers to execute JavaScript on the server-side, enabling the creation of fast, scalable, and efficient web applications.</i>
+</div>
+
+<div class="container">
+  <span class="section-title">Features of Node.js:</span>
+  <ul>
+    <li><b>Event-Driven Architecture:</b> Utilizes non-blocking I/O operations to handle multiple requests concurrently.</li>
+    <li><b>Asynchronous and Non-Blocking I/O:</b> Enhances performance by processing multiple operations without waiting for others to complete.</li>
+    <li><b>Fast Execution:</b> Powered by Chrome’s V8 engine, Node.js executes JavaScript code at high speed.</li>
+    <li><b>Single-Threaded:</b> Uses a single-threaded model with event looping, making it lightweight and scalable.</li>
+    <li><b>Cross-Platform:</b> Runs on various platforms like Windows, macOS, and Linux.</li>
+    <li><b>Rich Ecosystem with npm:</b> Provides thousands of libraries and modules for diverse use cases.</li>
+    <li><b>Real-Time Capabilities:</b> Ideal for applications requiring real-time communication, like chat apps and live notifications.</li>
+    <li><b>JSON Support:</b> Simplifies data exchange between server and client with native JSON support.</li>
+  </ul>
+</div>
+
+<div class="container">
+  <span class="section-title">Core Modules of Node.js:</span>
+  <ul>
+    <li><b>http:</b> Creates HTTP servers and handles HTTP requests and responses.</li>
+    <li><b>fs (File System):</b> Handles file operations like reading, writing, updating, and deleting files.</li>
+    <li><b>path:</b> Manages and manipulates file and directory paths.</li>
+    <li><b>os:</b> Provides information about the operating system, like CPU, memory, and network interfaces.</li>
+    <li><b>events:</b> Handles event-driven programming with the EventEmitter class.</li>
+    <li><b>stream:</b> Processes streaming data, like reading or writing large files.</li>
+    <li><b>buffer:</b> Works with binary data in the form of buffers.</li>
+    <li><b>crypto:</b> Implements cryptographic functions like hashing, encryption, and decryption.</li>
+    <li><b>util:</b> Provides utility functions like debugging and type checking.</li>
+    <li><b>dns:</b> Resolves domain names and performs DNS lookups.</li>
+  </ul>
+</div>
+
+<div class="container">
+  <span class="section-title">Important Topics:</span>
+  <ul>
+    <li><b>Event Loop and Event Emitters:</b> Understanding the asynchronous nature of Node.js and how the event loop works.</li>
+    <li><b>Modules and Packages:</b> Using built-in modules and managing external packages with npm or yarn.</li>
+    <li><b>File System (fs):</b> Working with files and directories (read, write, update, delete).</li>
+    <li><b>Streams and Buffers:</b> Handling large datasets and binary data efficiently.</li>
+    <li><b>RESTful APIs:</b> Building APIs using frameworks like Express.js.</li>
+    <li><b>Middleware:</b> Using middleware for logging, authentication, and error handling in Express.js.</li>
+    <li><b>Authentication and Authorization:</b> Implementing JWT, OAuth, and session-based authentication.</li>
+    <li><b>Database Integration:</b> Connecting to databases like MongoDB, MySQL, or PostgreSQL using libraries like Mongoose or Sequelize.</li>
+    <li><b>Error Handling:</b> Managing and handling errors gracefully.</li>
+    <li><b>Websockets:</b> Implementing real-time communication with libraries like Socket.IO.</li>
+    <li><b>Clustering:</b> Enhancing application performance by utilizing multiple CPU cores.</li>
+    <li><b>Testing:</b> Writing unit and integration tests using Mocha, Chai, and Jest.</li>
+    <li><b>Performance Optimization:</b> Techniques like caching, load balancing, and streamlining asynchronous operations.</li>
+    <li><b>Security:</b> Best practices for securing Node.js applications (e.g., avoiding XSS, CSRF, and SQL injection).</li>
+  </ul>
+</div>
+
+<div class="container">
+  <span class="section-title">Tools and Libraries of Node.js:</span>
+  <ul>
+    <li><b>npm and yarn:</b> Package managers for installing, managing, and sharing libraries.</li>
+    <li><b>Express.js:</b> A fast, minimalist web framework for building APIs and web applications.</li>
+    <li><b>Socket.IO:</b> Enables real-time, bidirectional communication between client and server.</li>
+    <li><b>Mongoose:</b> An ODM (Object Data Modeling) library for MongoDB.</li>
+    <li><b>Sequelize:</b> A popular ORM (Object Relational Mapping) for relational databases.</li>
+    <li><b>PM2:</b> A process manager for managing and monitoring Node.js applications in production.</li>
+    <li><b>Postman/Insomnia:</b> Tools for testing and debugging APIs.</li>
+    <li><b>ESLint and Prettier:</b> Linting and formatting tools to maintain code quality.</li>
+    <li><b>Mocha, Chai, Jest:</b> Testing frameworks for writing and executing test cases.</li>
+    <li><b>Nodemon:</b> Automatically restarts the application during development when file changes are detected.</li>
+    <li><b>Passport.js:</b> Middleware for authentication using strategies like OAuth and JWT.</li>
+    <li><b>Webpack and Parcel:</b> Module bundlers for optimizing and managing assets.</li>
+    <li><b>Redis:</b> A caching solution often used to store session data or frequently accessed information.</li>
+    <li><b>Koa.js:</b> A lightweight and expressive web framework built by the creators of Express.js.</li>
+    <li><b>Cluster Module:</b> Built-in Node.js module for scaling applications by utilizing all CPU cores.</li>
+  </ul>
+</div>
+
+</body>
+</html>

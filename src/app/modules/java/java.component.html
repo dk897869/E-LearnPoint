@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    b {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-top: 15px;
+      display: block;
+    }
+
+    i {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      color: #3498db;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    /* Flexbox for Buttons */
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    .button-container button {
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button-container button:hover {
+      background-color: #1d6fa5;
+      transform: translateY(-2px);
+    }
+
+    .button-container button:active {
+      background-color: #145582;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button Container with Flexbox -->
+  <div class="button-container">
+    <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+    <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Next</button>
+  </div>
+
+  <h1>Java Overview</h1>
+
+  <div class="container">
+    <b>What is Java?</b>
+    <i>Java is a high-level, object-oriented, class-based programming language developed by Sun Microsystems (now owned by Oracle). It is designed to have as few implementation dependencies as possible, allowing Java programs to run on any device or operating system that has a Java Virtual Machine (JVM). Java is widely used for building enterprise applications, web applications, mobile applications (Android), and more.</i>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Features of Java:</span>
+    <ul>
+      <li><b>Object-Oriented Programming (OOP):</b> Java follows the object-oriented paradigm...</li>
+      <li><b>Platform Independence (Write Once, Run Anywhere):</b> Java code is compiled into bytecode...</li>
+      <li><b>Simple and Easy to Learn:</b> Java syntax is straightforward...</li>
+      <li><b>Robust and Secure:</b> Java provides strong memory management...</li>
+      <li><b>Multithreading:</b> Java supports multithreading...</li>
+      <li><b>High Performance:</b> Java Just-In-Time (JIT) compiler...</li>
+      <li><b>Distributed Computing:</b> Java has built-in libraries...</li>
+      <li><b>Automatic Garbage Collection:</b> Java automatically manages memory...</li>
+      <li><b>Rich API:</b> Java comes with a vast set of libraries...</li>
+      <li><b>Backward Compatibility:</b> Java ensures backward compatibility...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Core Modules in Java:</span>
+    <ul>
+      <li><b>java.lang:</b> Core classes like String, Math, Object...</li>
+      <li><b>java.util:</b> Contains utility classes...</li>
+      <li><b>java.io:</b> Provides classes for I/O operations...</li>
+      <li><b>java.net:</b> Contains networking functionality...</li>
+      <li><b>java.sql:</b> Classes for interacting with databases...</li>
+      <li><b>java.awt and javax.swing:</b> GUI components...</li>
+      <li><b>java.time:</b> Date and time handling...</li>
+      <li><b>java.security:</b> Implementing security features...</li>
+      <li><b>java.math:</b> Mathematical operations...</li>
+      <li><b>java.nio:</b> Non-blocking I/O operations...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Important Topics in Java:</span>
+    <ul>
+      <li><b>Java Syntax and Basic Constructs:</b> Understanding variables, data types...</li>
+      <li><b>Object-Oriented Concepts:</b> Grasping key OOP principles...</li>
+      <li><b>Exception Handling:</b> Using try-catch blocks...</li>
+      <li><b>Multithreading and Concurrency:</b> Implementing multithreading...</li>
+      <li><b>Collections Framework:</b> Learning collection classes...</li>
+      <li><b>Java Stream API:</b> Using Java Streams...</li>
+      <li><b>JDBC (Java Database Connectivity):</b> Connecting Java apps to databases...</li>
+      <li><b>Lambda Expressions:</b> Learning lambda expressions...</li>
+      <li><b>Java Memory Management:</b> Understanding heap, stack...</li>
+      <li><b>Design Patterns:</b> Exploring design patterns...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Tools for Java Development:</span>
+    <ul>
+      <li><b>IntelliJ IDEA:</b> Powerful IDE for Java...</li>
+      <li><b>Eclipse:</b> Widely used open-source IDE...</li>
+      <li><b>NetBeans:</b> IDE with GUI builders...</li>
+      <li><b>Maven:</b> Build automation tool...</li>
+      <li><b>JUnit:</b> Popular testing framework...</li>
+      <li><b>Hibernate:</b> ORM framework for Java...</li>
+      <li><b>Jenkins:</b> Tool for continuous integration...</li>
+      <li><b>Git:</b> Distributed version control...</li>
+    </ul>
+  </div>
+
+</body>
+</html>

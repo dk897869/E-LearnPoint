@@ -1,0 +1,84 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    color: #333;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-title {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* About Section Styling */
+.about {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
+.about-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Courses Section Styling */
+.section-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.courses .course {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 4px solid #333;
+}
+
+.course h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.course p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}

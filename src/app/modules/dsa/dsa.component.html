@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Structures and Algorithms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    b {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-top: 20px;
+      display: block;
+    }
+
+    i {
+      font-style: italic;
+      color: #555;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      color: #3498db;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 1.2rem;
+    }
+
+    /* Flexbox for Buttons */
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    .button-container button {
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button-container button:hover {
+      background-color: #1d6fa5;
+      transform: translateY(-2px);
+    }
+
+    .button-container button:active {
+      background-color: #145582;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button Container with Flexbox -->
+  <div class="button-container">
+    <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+    <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Next</button>
+  </div>
+
+  <h1>Data Structures and Algorithms</h1>
+
+  <div class="container">
+    <b>What is Data Structures?</b>
+    <i>Data Structures refer to the way data is organized, managed, and stored to enable efficient operations...</i>
+  </div>
+
+  <div class="container">
+    <b>What is Algorithms?</b>
+    <i>Algorithms are step-by-step procedures or formulas for solving problems...</i>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Features of Data Structures:</span>
+    <ul>
+      <li><b>Efficient Data Storage:</b> Provides an organized way to store data...</li>
+      <li><b>Optimized Operations:</b> Improves time and space complexity...</li>
+      <li><b>Memory Management:</b> Helps allocate memory dynamically...</li>
+      <li><b>Reusability:</b> Common structures like stacks, queues...</li>
+      <li><b>Supports Advanced Algorithms:</b> Enables the implementation of complex algorithms...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Features of Algorithms:</span>
+    <ul>
+      <li><b>Efficiency:</b> Designed to optimize performance...</li>
+      <li><b>Correctness:</b> Produces accurate and reliable outputs...</li>
+      <li><b>Finiteness:</b> Must terminate after a finite number of steps...</li>
+      <li><b>Determinism:</b> Produces predictable outputs...</li>
+      <li><b>Generality:</b> Applicable to a wide range of problems...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Core Modules in Data Structures and Algorithms:</span>
+    <ul>
+      <li><b>Linear Data Structures:</b>
+        <ul>
+          <li>Array: Collection of elements identified by index...</li>
+          <li>Linked List: Linear collection...</li>
+          <li>Stack: Follows the LIFO principle...</li>
+          <li>Queue: Follows the FIFO principle...</li>
+        </ul>
+      </li>
+      <li><b>Non-Linear Data Structures:</b>
+        <ul>
+          <li>Tree: Hierarchical structure...</li>
+          <li>Binary Tree: A tree where each node has at most two children...</li>
+          <li>Heap: Specialized tree-based structure...</li>
+          <li>Graph: A set of nodes connected by edges...</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Important Topics in Data Structures:</span>
+    <ul>
+      <li>Arrays and Strings: Basics and operations...</li>
+      <li>Linked Lists: Types and operations...</li>
+      <li>Stacks and Queues: Implementation and real-world applications...</li>
+      <li>Trees: Binary Trees, BST, AVL Trees...</li>
+      <li>Graphs: Traversal algorithms...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Core Topics in Algorithms:</span>
+    <ul>
+      <li>Time and Space Complexity: Analyzing algorithms...</li>
+      <li>Divide and Conquer: Breaking problems into smaller subproblems...</li>
+      <li>Backtracking: Solving problems incrementally...</li>
+      <li>Graph Algorithms: Traversals, shortest path...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Tools for Data Structures and Algorithms:</span>
+    <ul>
+      <li><b>IDEs and Editors:</b> IntelliJ IDEA, Visual Studio Code...</li>
+      <li><b>Visualization Tools:</b> VisuAlgo, AlgoExpert...</li>
+      <li><b>Testing Tools:</b> JUnit, Postman...</li>
+      <li><b>Online Platforms:</b> LeetCode, HackerRank...</li>
+    </ul>
+  </div>
+
+</body>
+</html>

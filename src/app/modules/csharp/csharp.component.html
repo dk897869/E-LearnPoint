@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C# Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    b {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-top: 20px;
+      display: block;
+    }
+
+    i {
+      font-style: italic;
+      color: #555;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      color: #3498db;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 1.2rem;
+    }
+
+    /* Flexbox for Button Layout */
+    .button-container {
+      display: flex;
+      justify-content: space-between; /* Distribute buttons with equal space */
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    .button-container button {
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button-container button:hover {
+      background-color: #1d6fa5;
+      transform: translateY(-2px);
+    }
+
+    .button-container button:active {
+      background-color: #145582;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button Container with Flexbox -->
+  <div class="button-container">
+    <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+    <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Next</button>
+  </div>
+
+  <h1>C# Overview</h1>
+
+  <div class="container">
+    <b>What is C#?</b>
+    <i>C# (pronounced "C-sharp") is a modern, object-oriented programming language developed by Microsoft as part of the .NET framework...</i>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Features of C#:</span>
+    <ul>
+      <li><b>Object-Oriented Programming (OOP):</b> Supports encapsulation, inheritance, polymorphism, and abstraction for modular, reusable, and maintainable code.</li>
+      <li><b>Type Safety:</b> Prevents unintended operations and ensures type correctness at compile time.</li>
+      <li><b>Automatic Garbage Collection:</b> Manages memory automatically, improving performance and reducing memory leaks.</li>
+      <li><b>Cross-Platform Development:</b> Supports Windows, macOS, and Linux through .NET Core and .NET 5/6/7.</li>
+      <li><b>Rich Library Support:</b> Includes a vast collection of libraries for tasks like file handling, networking, and database operations.</li>
+      <li><b>Asynchronous Programming:</b> Provides async and await keywords for non-blocking code execution.</li>
+      <li><b>LINQ (Language Integrated Query):</b> Enables querying of collections, databases, and XML using declarative syntax.</li>
+      <li><b>Dynamic Binding:</b> Allows the use of dynamic objects for flexible runtime operations.</li>
+      <li><b>Interoperability:</b> Supports interaction with native code and other programming languages.</li>
+      <li><b>Secure and Scalable:</b> Offers built-in security features like type safety and encryption libraries.</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Core Modules in C#:</span>
+    <ul>
+      <li><b>System Namespace:</b> Provides fundamental classes for console input/output, math, and exception handling.</li>
+      <li><b>System.Collections:</b> Offers classes for data structures like lists, dictionaries, queues, and stacks.</li>
+      <li><b>System.Linq:</b> Enables querying collections using LINQ.</li>
+      <li><b>System.IO:</b> Provides classes for file and stream I/O operations.</li>
+      <li><b>System.Threading:</b> Supports multithreading and asynchronous programming.</li>
+      <li><b>System.Net:</b> Includes classes for working with network protocols like HTTP and FTP.</li>
+      <li><b>System.Data:</b> Supports database operations using ADO.NET.</li>
+      <li><b>System.Xml:</b> Includes classes for reading, writing, and parsing XML documents.</li>
+      <li><b>Entity Framework:</b> A popular ORM for working with databases.</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Important Topics in C#:</span>
+    <ul>
+      <li>Syntax and Basics: Variables, data types, operators, and control statements.</li>
+      <li>Object-Oriented Programming: Classes, inheritance, polymorphism, abstraction, and encapsulation.</li>
+      <li>LINQ and Lambda Expressions: Querying collections and writing concise code.</li>
+      <li>Asynchronous Programming: Using async and await for non-blocking execution.</li>
+      <li>Delegates and Events: Implementing callbacks and event-driven programming.</li>
+      <li>File I/O: Reading from and writing to files.</li>
+      <li>Dependency Injection: Using DI frameworks for loosely coupled code.</li>
+      <li>ASP.NET Core: Building modern web applications and APIs.</li>
+      <li>Multithreading: Using threads, tasks, and parallel libraries.</li>
+      <li>Design Patterns: Implementing patterns like Singleton, Factory, and MVC.</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Tools for C# Development:</span>
+    <ul>
+      <li><b>Integrated Development Environments (IDEs):</b> Visual Studio, Visual Studio Code, JetBrains Rider.</li>
+      <li><b>Build Tools:</b> MSBuild, Dotnet CLI.</li>
+      <li><b>Package Managers:</b> NuGet for managing libraries and dependencies.</li>
+      <li><b>Testing Frameworks:</b> xUnit, NUnit, Moq.</li>
+      <li><b>Database Tools:</b> SQL Server Management Studio (SSMS), Entity Framework.</li>
+      <li><b>Performance Tools:</b> DotTrace, Fiddler.</li>
+      <li><b>Version Control:</b> Git, GitHub, GitLab, Azure Repos.</li>
+      <li><b>Cross-Platform Development:</b> .NET Core/5/6/7, Xamarin, Blazor.</li>
+      <li><b>CI/CD Tools:</b> Azure DevOps, Jenkins.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

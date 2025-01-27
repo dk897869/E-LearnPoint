@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.NET Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    b {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-top: 20px;
+      display: block;
+    }
+
+    i {
+      font-style: italic;
+      color: #555;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      color: #3498db;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 1.2rem;
+    }
+
+    /* Flexbox for Button Layout */
+    .button-container {
+      display: flex;
+      justify-content: space-between; /* Equal space between the buttons */
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    .button-container button {
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button-container button:hover {
+      background-color: #1d6fa5;
+      transform: translateY(-2px);
+    }
+
+    .button-container button:active {
+      background-color: #145582;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button Container with Flexbox -->
+  <div class="button-container">
+    <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+    <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Home</button>
+  </div>
+
+  <h1>.NET Overview</h1>
+
+  <div class="container">
+    <b>What is .NET?</b>
+    <i>.NET is a free, open-source, cross-platform framework developed by Microsoft for building a wide range of applications...</i>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Features of .NET:</span>
+    <ul>
+      <li><b>Cross-Platform:</b> Write applications once and run them on multiple platforms...</li>
+      <li><b>Unified Framework:</b> Combines APIs and runtimes for web, desktop, mobile, and cloud development under one framework.</li>
+      <li><b>Multiple Language Support:</b> Supports C#, F#, and VB.NET...</li>
+      <li><b>High Performance:</b> Offers fast runtime performance...</li>
+      <li><b>Rich Library Ecosystem:</b> Includes a vast collection of libraries...</li>
+      <li><b>Asynchronous Programming:</b> Built-in support for asynchronous programming...</li>
+      <li><b>Compatibility with Legacy Code:</b> Supports older .NET Framework applications...</li>
+      <li><b>Built-In Security:</b> Provides secure authentication and authorization mechanisms...</li>
+      <li><b>Modern Tooling:</b> Integrated with advanced tools like Visual Studio...</li>
+      <li><b>Scalability and Reliability:</b> Ideal for developing enterprise-level applications...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Core Modules in .NET:</span>
+    <ul>
+      <li><b>ASP.NET Core:</b> Framework for building modern web applications...</li>
+      <li><b>Entity Framework (EF):</b> ORM tool for database operations...</li>
+      <li><b>Windows Presentation Foundation (WPF):</b> For creating rich desktop applications...</li>
+      <li><b>Windows Forms:</b> Framework for building simple desktop applications...</li>
+      <li><b>.NET MAUI (Multi-platform App UI):</b> Cross-platform framework for building native mobile and desktop apps...</li>
+      <li><b>System.IO:</b> Provides classes for handling file and stream operations...</li>
+      <li><b>System.Net:</b> Includes classes for networking...</li>
+      <li><b>System.Threading:</b> Supports multithreading...</li>
+      <li><b>System.Security:</b> Offers classes for cryptography...</li>
+      <li><b>SignalR:</b> Library for adding real-time web functionalities...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Important Topics in .NET:</span>
+    <ul>
+      <li><b>C# Programming:</b> Understanding C# syntax, OOP principles...</li>
+      <li><b>ASP.NET Core:</b> Building web applications, RESTful APIs...</li>
+      <li><b>Entity Framework Core:</b> Performing CRUD operations...</li>
+      <li><b>Dependency Injection (DI):</b> Implementing loosely coupled code using DI containers...</li>
+      <li><b>Middleware:</b> Creating and using middleware in ASP.NET Core...</li>
+      <li><b>Authentication and Authorization:</b> Implementing secure authentication mechanisms...</li>
+      <li><b>Blazor:</b> Building interactive web UIs using C#...</li>
+      <li><b>Microservices:</b> Building microservices architectures...</li>
+      <li><b>Testing:</b> Writing unit tests and integration tests...</li>
+      <li><b>Performance Optimization:</b> Techniques like caching, AOT compilation...</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <span class="section-title">Tools for .NET Development:</span>
+    <ul>
+      <li><b>Visual Studio:</b> Comprehensive IDE with advanced debugging...</li>
+      <li><b>Visual Studio Code:</b> Lightweight editor with extensions...</li>
+      <li><b>JetBrains Rider:</b> Cross-platform IDE for .NET development...</li>
+      <li><b>NuGet:</b> Official package manager for .NET libraries...</li>
+      <li><b>Azure DevOps:</b> For CI/CD pipelines and project management...</li>
+      <li><b>Docker:</b> Containerization platform for deploying .NET applications...</li>
+      <li><b>Kubernetes:</b> Orchestration tool for managing containerized applications...</li>
+      <li><b>Serilog:</b> Structured logging for .NET...</li>
+      <li><b>Application Insights:</b> Cloud-based monitoring and diagnostics...</li>
+    </ul>
+  </div>
+
+</body>
+</html>

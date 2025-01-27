@@ -1,0 +1,60 @@
+<div class="MainContainer" style="font-family: Arial, sans-serif; padding: 20px; background-color: #f5f5f5;">
+  <!-- Navbar -->
+  <div class="navbar" style="display: flex; align-items: center; justify-content: space-between; background-color: #2c3e50; padding: 15px; border-radius: 8px;">
+    <h4 style="color: #ecf0f1; font-size: 24px; margin: 0;">E-LearnPoint</h4>
+    <div>
+      <a class="nav-link" [routerLink]="[ '/home' ]" style="color: #ecf0f1; margin: 0 10px; text-decoration: none;">Home</a>
+      <a class="nav-link" [routerLink]="[ '/about' ]" style="color: #ecf0f1; margin: 0 10px; text-decoration: none;">About Us</a>
+      <a class="nav-link" [routerLink]="[ '/contact' ]" style="color: #ecf0f1; margin: 0 10px; text-decoration: none;">Contact Us</a>
+      <a class="nav-link" [routerLink]="[ '/courses' ]" style="color: #ecf0f1; margin: 0 10px; text-decoration: none;">Courses</a>
+      <a class="nav-link" [routerLink]="[ '/java' ]" style="color: #ecf0f1; margin: 0 10px; text-decoration: none;">Java</a>
+      <a class="nav-link" [routerLink]="[ '/dsa' ]" style="color: #ecf0f1; margin: 0 10px; text-decoration: none;">DSA</a>
+      <a class="nav-link" [routerLink]="[ '/mysql' ]" style="color: #ecf0f1; margin: 0 10px; text-decoration: none;">MySQL</a>
+      <a class="nav-link" [routerLink]="[ '/c#' ]" style="color: #ecf0f1; margin: 0 10px; text-decoration: none;">C#</a>
+      <a class="nav-link" [routerLink]="[ '/.Net' ]" style="color: #ecf0f1; margin: 0 10px; text-decoration: none;">.NET</a>
+      <a class="nav-link login" [routerLink]="[ '/register' ]" style="color: #e74c3c; margin: 0 10px; text-decoration: none; font-weight: bold;">Login</a>
+    </div>
+  </div>
+
+  <!-- Paragraphs -->
+  <div class="paragraph" style="margin: 20px 0; text-align: center;">
+    <i style="color: #6c3483; font-size: 18px; margin: 10px 0; background-color: #d7bde2; padding: 10px; border-radius: 8px;">You have to know only one thing.</i>
+    <p style="color: #8e44ad; font-size: 18px; margin: 10px 0; background-color: #f4ecf7; padding: 10px; border-radius: 8px;">You can easily learn every technology from our platform.</p>
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttons" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+    <button class="btn" (click)="onHTML()" style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: all 0.3s;">Learn HTML, CSS, and JavaScript</button>
+    <button class="btn" (click)="onReactnative()" style="background-color: #1abc9c; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: all 0.3s;">Learn React Native</button>
+    <button class="btn" (click)="onAngular()" style="background-color: #e67e22; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: all 0.3s;">Learn Angular</button>
+    <button class="btn" (click)="onNodejs()" style="background-color: #2ecc71; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: all 0.3s;">Learn Node.js</button>
+    <button class="btn" (click)="onDevops()" style="background-color: #e74c3c; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: all 0.3s;">Learn DevOps</button>
+  </div>
+
+
+  <!-- Informative Section -->
+  <div class="next" style="background-color: #f8f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #2c3e50; text-align: center;">Expand Your IT Knowledge</h2>
+    <div style="color: #34495e; line-height: 1.8; font-size: 16px; margin-top: 15px;">
+      <b>IT World:</b> <i>The IT world is constantly evolving with new technologies...</i><br>
+      <b>Artificial Intelligence:</b> <i>Artificial Intelligence (AI) and Machine Learning...</i><br>
+      <b>Cybersecurity:-</b> <i>Cybersecurity has become essential to protect sensitive data. Master techniques to secure networks, applications, and systems.</i><br>
+      <b>Cloud Computing:-</b> <i>Cloud Computing is changing the way businesses operate. Gain expertise in platforms like AWS, Azure, and Google Cloud to stay ahead.</i><br>
+      <b>Blockchain Technology:-</b>  <i>Learn about Blockchain technology, which powers cryptocurrencies like Bitcoin and Ethereum. Understand its use cases in industries beyond finance.</i><br>
+      <b>Data Science and Analytics:-</b>  <i>Data Science and Analytics are crucial for making informed decisions. Get hands-on experience with tools like Python, R, and SQL.</i><br>
+      <b>Internet of Things:-</b>  <i>The Internet of Things (IoT) connects devices worldwide. Discover how to create smart solutions for homes, cities, and industries.</i><br>
+      <b>Mobile Application Development:-</b>  <i>Mobile Application Development is in high demand. Learn to build apps for Android and iOS using frameworks like React Native and Flutter.</i><br>
+      <b>Game Development:-</b>  <i>Game Development lets you combine creativity and technology. Explore tools like Unity and Unreal Engine to design immersive experiences.</i><br>
+      <b>Software Testing/Quality Assurance:-</b>  <i>Software Testing and Quality Assurance ensure the reliability of applications. Master manual and automated testing techniques.</i><br>
+      <b>IT Project Management:-</b>  <i>IT Project Management involves coordinating teams and technologies. Learn methodologies like Agile and Scrum to deliver successful projects.</i><br>
+      <b>Networking and Infrastructure Management:-</b>  <i>Networking and Infrastructure Management are the backbone of IT systems. Gain expertise in setting up and maintaining networks efficiently.</i><br>
+      <b>Devops:-</b>  <i>DevOps combines development and operations. Learn how to streamline workflows and automate processes for faster delivery.</i><br>
+      <b>Quantum Computing:-</b>  <i>Quantum Computing is an emerging field with immense potential. Stay ahead by understanding its principles and applications.</i><br>
+      <b>Web Development:-</b>  <i>Web Development continues to evolve with frameworks like Next.js, Vue.js, and Svelte. Stay up-to-date to build modern web applications.</i><br>
+      <b>UI/UX Design:-</b>  <i>Explore UI/UX Design to create intuitive and visually appealing interfaces. Master tools like Figma, Sketch, and Adobe XD.</i><br>
+      <b>Big Data Technologies:-</b>  <i>Big Data technologies like Hadoop and Spark help manage vast amounts of data. Learn to analyze and derive insights efficiently.</i><br>
+      <b>AI Powered Chatbots:-</b>  <i>AI-Powered Chatbots are transforming customer interactions. Build smart bots using technologies like Dialogflow and IBM Watson.</i><br>
+      <b>AWS:-</b><i>Expand your knowledge in IT certifications like AWS Certified Solutions Architect, Microsoft Certified Azure Developer, and CompTIA Security+.</i><br>
+     </div>
+  </div>
+</div>

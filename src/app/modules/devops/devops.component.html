@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      line-height: 1.8;
+      color: #333;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    b {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-top: 15px;
+      display: block;
+    }
+
+    i {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      color: #3498db;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    /* Styling for buttons */
+    .button-container {
+      display: flex;
+      justify-content: space-between; /* Equal space on both sides */
+      margin: 25px 0; /* Margin for top and bottom */
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      width: 48%; /* Make buttons take equal width */
+    }
+
+    .back-button {
+      background-color: #e74c3c;
+    }
+
+    .home-button {
+      background-color: #3498db;
+    }
+
+    .back-button:hover {
+      background-color: #c0392b;
+    }
+
+    .home-button:hover {
+      background-color: #2980b9;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="button-container">
+    <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+    <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Home</button>
+</div>
+
+<h1>DevOps Overview</h1>
+
+<div class="container">
+  <b>What is DevOps?</b>
+  <i>DevOps is a set of practices, principles, and tools that combine software development (Dev) and IT operations (Ops) to shorten the software development lifecycle and deliver high-quality software continuously. It emphasizes collaboration, automation, monitoring, and integration throughout the entire application lifecycle.</i>
+</div>
+
+<div class="container">
+  <span class="section-title">Features of DevOps:</span>
+  <ul>
+    <li><b>Collaboration and Communication:</b> Encourages improved communication and collaboration between developers, operations teams, and other stakeholders.</li>
+    <li><b>Automation:</b> Automates repetitive tasks like testing, deployment, and configuration management, leading to faster and more reliable deliveries.</li>
+    <li><b>Continuous Integration (CI):</b> Developers continuously integrate their code into a shared repository multiple times a day, ensuring faster feedback and more stable software.</li>
+    <li><b>Continuous Delivery (CD):</b> Automatically deploys changes to production environments, ensuring faster and reliable software releases.</li>
+    <li><b>Infrastructure as Code (IaC):</b> Manages infrastructure using code and automation tools, allowing developers to provision, configure, and manage infrastructure in a consistent and repeatable manner.</li>
+    <li><b>Monitoring and Logging:</b> Continuous monitoring and logging allow teams to detect issues early, improve performance, and make data-driven decisions.</li>
+    <li><b>Rapid Feedback:</b> Real-time feedback loops allow for quick detection and resolution of issues, reducing the risk of production downtime.</li>
+    <li><b>Security (DevSecOps):</b> Integrates security practices into the DevOps lifecycle to ensure that security is built into the software from the beginning.</li>
+    <li><b>Scalability and Flexibility:</b> Ensures applications and systems can scale easily and adapt to changing business needs.</li>
+  </ul>
+</div>
+
+<div class="container">
+  <span class="section-title">Core Modules in DevOps:</span>
+  <ul>
+    <li><b>Version Control:</b> Managing source code changes using systems like Git to allow team collaboration and track modifications.</li>
+    <li><b>Continuous Integration and Continuous Deployment (CI/CD):</b> Automates code integration and deployment pipelines, ensuring quick and reliable delivery of updates.</li>
+    <li><b>Automated Testing:</b> Uses automated testing frameworks to continuously verify the integrity and functionality of the software.</li>
+    <li><b>Configuration Management:</b> Tools like Ansible, Chef, and Puppet ensure system configurations are consistently managed and deployed.</li>
+    <li><b>Monitoring and Logging:</b> Tools like Prometheus, Grafana, and ELK stack (Elasticsearch, Logstash, Kibana) monitor system health, track performance, and log system activity.</li>
+    <li><b>Containerization and Orchestration:</b> Using Docker for containerizing applications and Kubernetes for orchestration to scale and manage microservices and distributed applications.</li>
+    <li><b>Infrastructure as Code (IaC):</b> Tools like Terraform and AWS CloudFormation automate infrastructure provisioning and management.</li>
+    <li><b>Collaboration Tools:</b> Communication platforms like Slack or Jira facilitate team collaboration and tracking of tasks and progress.</li>
+    <li><b>Security Automation (DevSecOps):</b> Implements automated security practices, such as vulnerability scanning and automated patching, to ensure security at every stage of the lifecycle.</li>
+  </ul>
+</div>
+
+<div class="container">
+  <span class="section-title">Important Topics in DevOps:</span>
+  <ul>
+    <li><b>Continuous Integration (CI) and Continuous Deployment (CD):</b> Automating code integration, testing, and deployment to ensure frequent and reliable releases.</li>
+    <li><b>Infrastructure as Code (IaC):</b> Using code to automate the provisioning and management of infrastructure resources.</li>
+    <li><b>Microservices Architecture:</b> Building applications as independent, loosely coupled services that can be developed, deployed, and scaled independently.</li>
+    <li><b>Monitoring and Logging:</b> Collecting and analyzing logs and metrics to monitor the health and performance of systems and applications.</li>
+    <li><b>Automated Testing:</b> Implementing automated testing to catch bugs and regressions early in the development lifecycle.</li>
+    <li><b>Containerization and Virtualization:</b> Using containers (e.g., Docker) to isolate applications and manage their environments in a consistent manner across different stages.</li>
+    <li><b>Collaboration and Communication:</b> Tools and practices to ensure effective communication between development, operations, and other teams to reduce silos and improve efficiency.</li>
+    <li><b>Security and Compliance:</b> Integrating security into the DevOps process (DevSecOps) to ensure secure and compliant applications are delivered.</li>
+    <li><b>Scalability and High Availability:</b> Designing systems that scale efficiently and ensure high availability, fault tolerance, and disaster recovery.</li>
+    <li><b>Cloud Platforms:</b> Using cloud services (AWS, Azure, Google Cloud) to enable scalable, flexible, and cost-effective infrastructure for development and operations.</li>
+    <li><b>Version Control:</b> Using Git and other version control systems to manage code and collaborate on software development projects.</li>
+    <li><b>Incident Management and Recovery:</b> Implementing strategies and tools for quickly identifying, managing, and recovering from incidents and failures.</li>
+  </ul>
+</div>
+
+<div class="container">
+  <span class="section-title">Tools for DevOps:</span>
+  <ul>
+    <li><b>Version Control:</b> Git, GitHub/GitLab/Bitbucket.</li>
+    <li><b>Continuous Integration and Continuous Deployment (CI/CD):</b> Jenkins, CircleCI, Travis CI, GitLab CI/CD.</li>
+    <li><b>Containerization and Orchestration:</b> Docker, Kubernetes, Docker Compose.</li>
+    <li><b>Configuration Management:</b> Ansible, Chef, Puppet, SaltStack.</li>
+    <li><b>Monitoring and Logging:</b> Prometheus, Grafana, ELK Stack, Nagios.</li>
+    <li><b>Cloud Platforms:</b> AWS, Azure, Google Cloud Platform.</li>
+    <li><b>Collaboration Tools:</b> Slack, Jira, Trello.</li>
+    <li><b>Security Tools (DevSecOps):</b> Aqua Security, Snyk, HashiCorp Vault.</li>
+    <li><b>Testing Tools:</b> Selenium, JUnit, Mocha/Chai.</li>
+    <li><b>Automated Build and Deployment:</b> Maven, Gradle, Ansible.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML, CSS, and JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    h3 {
+      color: #2c3e50;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    b {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    i {
+      font-style: italic;
+      color: #444;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      text-indent: -25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      color: #3498db;
+      font-weight: bold;
+      font-size: 1.2em;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .feature-section {
+      background-color: #eaf2f8;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .important-topics {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .important-topics ul li {
+      text-indent: -25px;
+    }
+
+    /* Flexbox for Button Layout */
+    .button-container {
+      display: flex;
+      justify-content: space-between; /* Equal space between the buttons */
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    .button-container button {
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button-container button:hover {
+      background-color: #1d6fa5;
+      transform: translateY(-2px);
+    }
+
+    .button-container button:active {
+      background-color: #145582;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button Container with Flexbox -->
+  <div class="button-container">
+    <button (click)="onBack()" class="btn btn-primary">Home</button>
+    <button (click)="onNext()" class="btn btn-primary">Next</button>
+  </div>
+
+  <h3>What is HTML?</h3>
+  <p>HTML is the standard markup language used to create the structure and content of web pages. It provides the basic framework of a website by defining elements like headings, paragraphs, images, and links.</p>
+
+  <div class="feature-section">
+    <b>Features:</b>
+    <ul>
+      <li>Structure: Creates a hierarchical structure for content.</li>
+      <li>Semantic Elements: Offers elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, and <code>&lt;article&gt;</code> for better readability and SEO.</li>
+      <li>Media Support: Embeds multimedia like images, audio, and video.</li>
+      <li>Hyperlinking: Connects pages and resources via <code>&lt;a&gt;</code> tags.</li>
+      <li>Forms: Enables user input through elements like <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;button&gt;</code>.</li>
+    </ul>
+  </div>
+
+  <div class="important-topics">
+    <b>Important Topics:</b>
+    <ul>
+      <li>Basic Tags</li>
+      <li>Forms and Input Types</li>
+      <li>Semantic HTML</li>
+      <li>Tables and Lists</li>
+      <li>Multimedia Elements (Images, Audio, Video)</li>
+      <li>HTML Attributes (e.g., id, class, src, alt)</li>
+    </ul>
+  </div>
+
+  <h3>What is CSS?</h3>
+  <p><i>CSS is a stylesheet language used to describe the presentation of an HTML document. It controls the layout, design, and visual appearance of a web page.</i></p>
+
+  <div class="feature-section">
+    <b>Features:</b>
+    <ul>
+      <li>Styling: Adds colors, fonts, spacing, and other styles to elements.</li>
+      <li>Layout Control: Manages positioning, alignment, and spacing.</li>
+      <li>Responsive Design: Adapts websites for different devices using media queries.</li>
+      <li>Selectors: Provides precise control over which elements to style.</li>
+      <li>Animation: Creates visual effects with transitions and animations.</li>
+    </ul>
+  </div>
+
+  <div class="important-topics">
+    <b>Important Topics:</b>
+    <ul>
+      <li>Selectors: Element, Class, ID, Grouping</li>
+      <li>Box Model: Margin, Border, Padding, Content</li>
+      <li>Positioning: Static, Relative, Absolute, Fixed, Sticky</li>
+      <li>Flexbox and Grid for Layout</li>
+      <li>Pseudo-classes: <code>:hover</code>, <code>:nth-child()</code></li>
+      <li>Responsive Design (Media Queries)</li>
+      <li>Transitions and Animations</li>
+    </ul>
+  </div>
+
+  <h3>What is JavaScript?</h3>
+  <p><i>JavaScript is a programming language that enables dynamic and interactive functionality on websites. It allows developers to manipulate HTML and CSS, respond to user interactions, and control multimedia.</i></p>
+
+  <div class="feature-section">
+    <b>Features:</b>
+    <ul>
+      <li>Dynamic Content: Updates content without reloading the page (e.g., AJAX).</li>
+      <li>Event Handling: Responds to user actions like clicks, hovers, and inputs.</li>
+      <li>Object-Oriented: Supports objects, classes, and inheritance.</li>
+      <li>Cross-Platform: Works on any browser with JavaScript support.</li>
+      <li>Asynchronous Programming: Handles operations like fetching data using Promises and async/await.</li>
+    </ul>
+  </div>
+
+  <div class="important-topics">
+    <b>Important Topics:</b>
+    <ul>
+      <li>Variables: <code>var</code>, <code>let</code>, <code>const</code></li>
+      <li>Data Types and Operators</li>
+      <li>DOM Manipulation</li>
+      <li>Functions and Scope (Arrow Functions, Closures)</li>
+      <li>Events and Event Listeners</li>
+      <li>Asynchronous Programming (Promises, async/await)</li>
+      <li>JSON Handling</li>
+      <li>ES6+ Features (Destructuring, Spread Operator, Modules)</li>
+      <li>Error Handling (try-catch)</li>
+    </ul>
+  </div>
+
+</body>
+</html>

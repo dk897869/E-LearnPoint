@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular 19 Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      line-height: 1.8;
+      color: #333;
+      margin: 20px;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    b {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-top: 20px;
+      display: block;
+    }
+
+    i {
+      font-style: italic;
+      color: #555;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      color: #3498db;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    .tools-list ul li {
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .tools-list ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #27ae60;
+      font-size: 1rem;
+    }
+
+    /* Styling for buttons */
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px 0; /* Adjust margin as needed */
+    }
+
+    .back-button, .next-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      width: 48%; /* Adjust width to fit within the container */
+    }
+
+    .back-button {
+      background-color: #e74c3c;
+    }
+
+    .next-button {
+      background-color: #2ecc71;
+    }
+
+    .back-button:hover {
+      background-color: #c0392b;
+    }
+
+    .next-button:hover {
+      background-color: #27ae60;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="button-container">
+        <button style="width: 100px; height: 50px;" (click)="onBack()" class="btn btn-primary">Back</button>
+        <button style="width: 100px; height: 50px;" (click)="onNext()" class="btn btn-primary">Next</button>
+    </div>
+    
+<h1>Angular 19 Overview</h1>
+
+
+<div class="container">
+  <b>What is Angular?</b>
+  <i>Angular 19 is the latest version of Angular, a TypeScript-based open-source framework developed by Google for building scalable and dynamic single-page applications (SPAs). It provides powerful tools for developing web, mobile, and desktop applications with a focus on speed and maintainability.</i>
+</div>
+
+<div class="container">
+  <span class="section-title">Features of Angular:</span>
+  <ul>
+    <li><b>TypeScript Support:</b> Built using TypeScript for type safety and better tooling.</li>
+    <li><b>Modular Architecture:</b> Applications are divided into modules for better organization and scalability.</li>
+    <li><b>Component-Based Framework:</b> UI is built using reusable and self-contained components.</li>
+    <li><b>Improved Performance:</b> Faster rendering with the Ivy compiler and better change detection mechanisms.</li>
+    <li><b>Standalone Components:</b> Reduces boilerplate by allowing components, directives, and pipes to work without the NgModule.</li>
+    <li><b>Reactive Forms:</b> Powerful tools for building and managing complex forms with validation.</li>
+    <li><b>Built-In Directives:</b> Includes structural (ngIf, ngFor) and attribute directives ([ngStyle],ngClass]) to enhance template capabilities.</li>
+    <li><b>Two-Way Data Binding:</b> Synchronizes the UI and business logic seamlessly.</li>
+    <li><b>Dependency Injection (DI):</b> Built-in DI system for managing services and components.</li>
+    <li><b>Cross-Platform:</b> Develops web, mobile, and PWA applications.</li>
+    <li><b>Internationalization (i18n):</b> Supports multiple languages and locales.</li>
+    <li><b>Enhanced Error Handling:</b> Improved error messages for debugging.</li>
+  </ul>
+</div>
+
+<div class="container">
+  <span class="section-title">Modules in Angular:</span><br>
+  <i>Modules in Angular help organize the application into cohesive blocks. Some core modules include:</i>
+  <ul>
+    <li><b>BrowserModule:</b> Required for all web applications and provides essential services like DOM manipulation.</li>
+    <li><b>CommonModule:</b> Includes commonly used directives and pipes like ngIf, ngFor, and CurrencyPipe.</li>
+    <li><b>FormsModule:</b> Provides template-driven forms and two-way data binding.</li>
+    <li><b>ReactiveFormsModule:</b> Enables reactive and model-driven forms.</li>
+    <li><b>HttpClientModule:</b> Facilitates communication with backend APIs.</li>
+    <li><b>RouterModule:</b> Adds routing and navigation capabilities.</li>
+    <li><b>AnimationsModule:</b> Provides support for animations using Angular's animation library.</li>
+    <li><b>ServiceWorkerModule:</b> Enables Progressive Web Application (PWA) features.</li>
+    <li><b>PlatformBrowserDynamicModule:</b> Used to bootstrap the application dynamically.</li>
+  </ul>
+</div>
+
+<div class="container">
+  <span class="section-title">Important Topics:</span>
+  <ul>
+    <li><b>Component Interaction:</b> Using Input, Output, and EventEmitter for parent-child communication.</li>
+    <li><b>Routing and Navigation:</b> Lazy loading, route guards, and dynamic routes.</li>
+    <li><b>Template Syntax:</b> Interpolation, property binding, event binding, and attribute binding.</li>
+    <li><b>Directives:</b> Custom directives, ngIf, ngFor, and ngSwitch.</li>
+    <li><b>Forms:</b> Template-driven and reactive forms, form validation, and custom validators.</li>
+    <li><b>Services and Dependency Injection:</b> Creating and injecting services into components or other services.</li>
+    <li><b>RxJS:</b> Observables, subjects, and operators like map, filter, and mergeMap.</li>
+    <li><b>State Management:</b> Using NgRx or other libraries for managing application state.</li>
+    <li><b>Pipes:</b> Built-in pipes like DatePipe, CurrencyPipe, and custom pipes.</li>
+    <li><b>Testing:</b> Unit testing with Jasmine and Karma, and end-to-end testing with Protractor or Cypress.</li>
+    <li><b>Performance Optimization:</b> Lazy loading, preloading strategies, and optimizing change detection.</li>
+    <li><b>Ivy Renderer:</b> Leveraging Ivy for smaller bundles and faster compilation.</li>
+  </ul>
+</div>
+
+<div class="container tools-list">
+  <span class="section-title">Tools for Angular:</span>
+  <ul>
+    <li><b>Angular CLI:</b> Command-line interface for creating, managing, and building Angular projects.</li>
+    <li><b>Visual Studio Code:</b> Popular IDE with Angular-specific extensions like Angular Language Service.</li>
+    <li><b>RxJS DevTools:</b> Debugging reactive programming with Observables.</li>
+    <li><b>Augury:</b> Chrome extension for debugging and profiling Angular applications.</li>
+    <li><b>Postman or Insomnia:</b> Tools for testing and debugging APIs.</li>
+    <li><b>Karma and Jasmine:</b> Unit testing tools for Angular applications.</li>
+    <li><b>Protractor/Cypress:</b> End-to-end testing frameworks.</li>
+    <li><b>Webpack:</b> For optimizing and bundling Angular applications.</li>
+    <li><b>Angular Console:</b> GUI tool for managing Angular projects.</li>
+    <li><b>Firebase:</b> Backend-as-a-Service platform for hosting and real-time database integration.</li>
+  </ul>
+</div>
+
+</body>
+</html>
